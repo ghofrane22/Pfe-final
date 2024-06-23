@@ -1,0 +1,4 @@
+.section-title.text-start::after {
+  width: calc(100% + 60px);
+  left: 0;
+}

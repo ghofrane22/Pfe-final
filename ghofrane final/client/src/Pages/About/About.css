@@ -1,0 +1,185 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 120px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #9d9d9d;
+}
+
+a {
+  text-decoration: none;
+  color: #4b4b4b;
+}
+
+a:hover {
+  color: #4b4b4b;
+  font-weight: 900;
+}
+
+input,
+textarea {
+  border-radius: 0px;
+  border: 1.1px solid #00000040 !important;
+}
+
+input:focus,
+textarea:focus {
+  outline: 0px !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: 1px solid #92d35e !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4b4b4b;
+  font-weight: 900;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 40px;
+}
+
+.green {
+  color: #92d35e;
+}
+
+.main-btn {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  background-color: #92d35e;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 12px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.main-btn:hover {
+  color: white;
+  background-color: #4b4b4b;
+}
+
+.main {
+  margin-top: 150px;
+}
+
+.quote {
+  position: relative;
+  padding: 30px 0px;
+  margin: 40px 0px;
+  border: 1px solid #e7e7e7;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.quote .blockquote {
+  font-size: 2em;
+  width: 85%;
+}
+
+.quote .blockquote::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  color: #92d35e;
+  font-size: 3em;
+  z-index: -1;
+}
+
+.quote .blockquote-footer {
+  font-size: 1.1em;
+}
+
+.aboutus .img {
+  margin-bottom: 30px;
+}
+
+.aboutus .img img {
+  width: 40%;
+}
+
+.aboutus .team .team-person .person {
+  margin-bottom: 50px;
+}
+
+.aboutus .team .team-person .person img {
+  border-radius: 20px;
+  max-width: 300px;
+}
+
+.aboutus .team .team-person .person span {
+  display: block;
+}
+
+.aboutus .team .team-person .person .name {
+  font-weight: 900;
+  color: #4b4b4b;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+.container .row .aboutus .about {
+  display: flex;
+}
+
+.container .row .aboutus .about .comp {
+  padding: 96px 1px;
+  margin: 132px 6px;
+  /* width: 64px; */
+  margin-left: -198px;
+}
+.container .row .aboutus .about .company .img {
+  width: 152%;
+  padding: -24px 80px;
+  margin: -70px 43px;
+  margin-right: -11px;
+}
+.container .row .aboutus .about .company h1 .welcom {
+  margin: -11px 0px;
+  padding: 91px 177px;
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease forwards;
+}
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

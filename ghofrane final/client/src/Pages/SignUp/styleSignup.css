@@ -1,0 +1,230 @@
+/* POPPINS FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper-singup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Réduction de la hauteur pour s'adapter à l'écran */
+  background-color: white;
+  /* background-image: url(https://www.shutterstock.com/image-illustration/abstract-noise-dotwork-pattern-gradient-600nw-2268767837.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+#registerBtn {
+  margin-left: 15px;
+}
+
+.btn.btn.white-btn:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn {
+  display: none;
+}
+.form-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 512px;
+  height: 420px;
+  z-index: 2;
+}
+
+.signUp-container {
+  /* height: 808px; */
+  border-radius: 2%;
+  /* background-color: rgba(36, 36, 41, 0.279); */
+  /* position: absolute; */
+  right: -520px;
+  width: 602px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+  padding: 1px;
+  margin: 64px 0px;
+}
+/* .wrapper-singup .signUp-container .two-forms .input-box .icon-green {
+  color: #92d35e;
+} */
+/* .wrapper-singup .signUp-container .input-box .icon-green {
+  color: #92d35e;
+} */
+.top span {
+  color: #92d35e;
+  font-size: small;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+.top span a {
+  font-weight: 500;
+  color: #9d9d9d;
+  margin-left: 5px;
+}
+header {
+  color: #9d9d9d;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 0 30px 0;
+}
+.two-forms {
+  display: flex;
+  gap: 87px;
+}
+.input-field {
+  font-size: 15px;
+  background: rgb(91 83 83 / 54%);
+  color: #161515;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+}
+.input-field:hover,
+.input-field:focus {
+  background: rgb(137 126 126 / 49%);
+}
+::-webkit-input-placeholder {
+  color: #fff;
+}
+.input-box {
+  position: relative; /* Ajoutez cette propriété pour rendre les icônes positionnées par rapport à ce conteneur */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.input-field {
+  font-size: 15px;
+  background: rgb(91 83 83 / 54%);
+  color: #161515;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+  position: relative; /* Ajoutez cette propriété */
+}
+
+.input-box i {
+  position: absolute; /* Ajoutez cette propriété pour positionner l'icône */
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px; /* Ajustez cette valeur selon votre besoin */
+  color: #ffffff;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+.submit {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  height: 45px;
+  width: 50%;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.submit:hover {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: small;
+  margin-top: 10px;
+}
+.two-col .one {
+  display: flex;
+  gap: 5px;
+}
+.two label a {
+  text-decoration: none;
+  color: #fff;
+}
+.two label a:hover {
+  text-decoration: underline;
+}
+
+.radio-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.bt-radio {
+  color: #fff;
+  cursor: pointer;
+}
+
+.bt-radio:hover {
+  text-decoration: underline;
+}
+
+.bt-radio::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid#a29fa0;
+  margin-right: 10px;
+}
+
+input[type="radio"]:checked + .bt-radio::before {
+  background-color: #92d35e;
+}
+
+@media only screen and (max-width: 540px) {
+  .wrapper-singup {
+    min-height: 100vh;
+  }
+  .form-box {
+    width: 100%;
+    height: 500px;
+  }
+  .signUp-container,
+  .login-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .signUp-container .two-forms {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+.bt-radio {
+  color: #a29fa0;
+}
