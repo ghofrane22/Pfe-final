@@ -31,30 +31,20 @@ const HandMadeProfile = () => {
   const updateprofile = async (e) => {
     e.preventDefault();
     setLoading(true);
+
+    let updatedData = { ...updateProfile };
     if (file) {
       const url = await upload(file);
-      dispatch(
-        update_profile({
-          updateProfile: { ...updateProfile, avatar: url },
-          id: user._id,
-          setLoading,
-        })
-      );
-      Swal.fire({
-        icon: "success",
-        title: "Profil mis à jour!",
-        showConfirmButton: false,
-        timer: 1500,
-      });
-    } else {
-      dispatch(update_profile({ updateProfile, id: user._id, setLoading }));
-      Swal.fire({
-        icon: "success",
-        title: "Profil mis à jour!",
-        showConfirmButton: false,
-        timer: 1500,
-      });
+      updatedData = { ...updatedData, avatar: url };
     }
+
+    dispatch(
+      update_profile({
+        updateProfile: updatedData,
+        id: user._id,
+        setLoading,
+      })
+    );
   };
 
   const deleteProject = (id) => {
